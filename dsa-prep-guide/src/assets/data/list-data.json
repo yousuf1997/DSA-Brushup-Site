@@ -1,7 +1,7 @@
  [
         {
             "title" : "Array",
-            "description" : "An Elements are stored in adjacent order." 
+            "description" : "A collection of elements that are stored in continous memory." 
         },
         {
             "title" : "LinkedList",

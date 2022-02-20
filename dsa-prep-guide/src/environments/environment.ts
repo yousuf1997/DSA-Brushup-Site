@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  LIST_TITLE_URL : "../assets/data/list-data.json"
+  LIST_TITLE_URL : "../assets/data/list-data.json",
+  ARRAY_URL : "../assets/data/array.json"
 };
 
 /*

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AssetServiceService } from '../service/asset-service.service';
 
 @Component({
   selector: 'app-content-viwer',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentViwerComponent implements OnInit {
 
-  constructor() { }
+  currentRenderData : string = '';
+
+  constructor(private service: AssetServiceService) { }
 
   ngOnInit(): void {
   }

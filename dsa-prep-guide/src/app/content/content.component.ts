@@ -14,16 +14,6 @@ export class ContentComponent implements OnInit {
   public dsNames :Array<ListItem> = [];
 
   ngOnInit(): void {
-    // this.dsNames.push('Array');
-    // this.dsNames.push('LinkedList');
-    // this.dsNames.push('Stack');
-    // this.dsNames.push('Queue');
-    // this.dsNames.push('Deque');
-    // this.dsNames.push('Priority Queue');
-    // this.dsNames.push('Tree');
-    // this.dsNames.push('Trie');
-
-
     this.service.getListTitle().subscribe(
 
       (items : ListItem[] ) => {

@@ -13,4 +13,9 @@ export class AssetServiceService {
   getListTitle() {
     return this.http.get<ListItem[]>(environment.LIST_TITLE_URL);
   }
+
+  getData(type: string){
+      return this.http.get(environment.ARRAY_URL);
+  
+  }
 }
