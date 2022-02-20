@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 
-.base-font{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.2em;
+
+.card{
+    transition: transform .2s; /* Animation */
+    &:hover {
+        background-color: #F1F9E3;
+        transform: scale(1.09); 
+        border-left-color: #f8d591;
+    }
 }

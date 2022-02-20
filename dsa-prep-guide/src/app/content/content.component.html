@@ -1,33 +1,32 @@
-<div class="container" style="padding: 1em;">
+<div class="container base-font" style="padding-top: 1em;">
+
 
   <div class="row">
+
     <div class="col">
-      <p class="base-font">Welcome to algoSchool, learn data structures and algorithms for free!</p>
-      <hr>
+      
+       <h3 style="font-weight: bolder; color: whitesmoke;">Data Structures</h3>
+       
     </div>
+
   </div>
 
   <div class="row">
 
-    <div class="col">
+    <div class="col" style="padding: 1em;">
 
+      <div class="d-flex justify-content-center flex-column">
+        <div class="p-2" *ngFor="let ds of dsNames">
 
-      <div class="card base-font">
-        <div class="card-header">
-          Data Structure
-        </div>
-        <div class="card-body">
+          <a routerLink="/content-viewer" style="  text-decoration: none; color: black">
+            <div class="card card-customization shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">{{ds.title}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ds.description}}</h6>
+              </div>
+            </div>
 
-
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">String</a>
-            <a href="#" class="list-group-item list-group-item-action">Array</a>
-            <a href="#" class="list-group-item list-group-item-action">LinkedList</a>
-            <a href="#" class="list-group-item list-group-item-action">Tree</a>
-            <a href="#" class="list-group-item list-group-item-action">Stack</a>
-            <a href="#" class="list-group-item list-group-item-action">Queue</a>
-          </div>
-
+          </a>
 
         </div>
       </div>
@@ -35,5 +34,6 @@
     </div>
 
   </div>
+
 
 </div>

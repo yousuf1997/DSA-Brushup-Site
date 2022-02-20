@@ -1,0 +1,26 @@
+ [
+        {
+            "title" : "Array",
+            "description" : "An Elements are stored in adjacent order." 
+        },
+        {
+            "title" : "LinkedList",
+            "description" : "An Elements are stored in adjacent order." 
+        },
+        {
+            "title" : "Queue",
+            "description" : "An Elements are stored in adjacent order." 
+        },
+        {
+            "title" : "Stack",
+            "description" : "An Elements are stored in adjacent order." 
+        },
+        {
+            "title" : "Tree",
+            "description" : "An Elements are stored in adjacent order." 
+        },
+        {
+            "title" : "Trie",
+            "description" : "An Elements are stored in adjacent order." 
+        }
+    ]
