@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+$base-background-color: #445144;
+
+.base-font{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+}
+
+
+
+.high_lighted{
+    font-family: 'Quicksand', sans-serif;
+    color: whitesmoke;
+    background-color: $base-background-color;
+    display: inline;
+    font-size: .9em;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    font-weight: lighter;
+    padding-right: 0.5rem;
+}
+
+.card-customization {
+    border-radius: 1em; 
+    border-left-color: #5F9EA0; 
+    border-left-width: 1em;
+    border-top: 0em;
+    border-right: 0em;
+    border-bottom: 0em;
+}
+
+body{
+    background-color:$base-background-color;
+}

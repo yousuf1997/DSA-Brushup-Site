@@ -1,0 +1,11 @@
+
+
+
+.card{
+    transition: transform .2s; /* Animation */
+    &:hover {
+        background-color: #F1F9E3;
+        transform: scale(1.09); 
+        border-left-color: #f8d591;
+    }
+}
