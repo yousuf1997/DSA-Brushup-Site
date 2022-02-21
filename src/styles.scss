@@ -37,3 +37,11 @@ $base-background-color: #445144;
 body{
     background-color:$base-background-color;
 }
+
+.code-block{
+    background-color: #f7f2c6;
+    padding: 1.5em;
+    border-radius: 1em;
+    color: black;
+    display: block;
+}
