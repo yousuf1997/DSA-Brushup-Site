@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-$base-background-color: #445144;
-
+// $base-background-color: #445144;
+$base-background-color1: #594F4F;
+$base-background-color2: #547980;
+$base-background-color3: #45ADA8;
+$base-background-color4: #9DE0AD;
+$base-background-color5: #E5FCC2 ;
+$base-background-color6: #83AF9B;
 .base-font{
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2em;
@@ -14,7 +19,7 @@ $base-background-color: #445144;
 .high_lighted{
     font-family: 'Quicksand', sans-serif;
     color: whitesmoke;
-    background-color: $base-background-color;
+    background-color: $base-background-color1;
     display: inline;
     font-size: .9em;
     border-top-left-radius: 1.5rem;
@@ -23,11 +28,12 @@ $base-background-color: #445144;
     padding-left: 1rem;
     font-weight: lighter;
     padding-right: 0.5rem;
+    background-image: linear-gradient(to right, $base-background-color1 , $base-background-color2);
 }
 
 .card-customization {
     border-radius: 1em; 
-    border-left-color: #5F9EA0; 
+    border-left-color: $base-background-color6; 
     border-left-width: 1em;
     border-top: 0em;
     border-right: 0em;
@@ -35,7 +41,8 @@ $base-background-color: #445144;
 }
 
 body{
-    background-color:$base-background-color;
+    background-image: linear-gradient($base-background-color2, $base-background-color1);
+    background-color: $base-background-color1;
 }
 
 .code-block{
