@@ -3,10 +3,23 @@
 
   <div class="row">
 
-    <div class="col">
-      
-       <h3 style="font-weight: bolder; color: whitesmoke;">Data Structures</h3>
-       
+    <div class="col" style="padding: 1em;">
+      <h5 style="color: white; font-weight: bold;">Data Structure</h5>
+      <div class="d-flex justify-content-center flex-column">
+        <div class="p-2" *ngFor="let ds of dsNames">
+          <a routerLink="/content-viewer" style="  text-decoration: none; color: black">
+            <div class="card card-customization shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">{{ds.title}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ds.description}}</h6>
+              </div>
+            </div>
+
+          </a>
+
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -14,15 +27,14 @@
   <div class="row">
 
     <div class="col" style="padding: 1em;">
-
+      <h5 style="color: white; font-weight: bold;">Java Collections</h5>
       <div class="d-flex justify-content-center flex-column">
-        <div class="p-2" *ngFor="let ds of dsNames">
-
+        <div class="p-2" *ngFor="let item of javaCollectionList">
           <a routerLink="/content-viewer" style="  text-decoration: none; color: black">
             <div class="card card-customization shadow-sm">
               <div class="card-body">
-                <h5 class="card-title" style="font-weight: bold;">{{ds.title}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{ds.description}}</h6>
+                <h5 class="card-title" style="font-weight: bold;">{{item.title}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{item.description}}</h6>
               </div>
             </div>
 

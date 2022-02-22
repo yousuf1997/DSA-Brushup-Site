@@ -16,6 +16,9 @@ export class AssetServiceService {
 
   getData(type: string){
       return this.http.get(environment.ARRAY_URL);
-  
+  }
+
+  getJavaCollectionList(){
+    return this.http.get<ListItem[]>(environment.JAVA_COLLECTION_LIST);
   }
 }

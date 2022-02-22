@@ -11,13 +11,24 @@ export class ContentComponent implements OnInit {
 
   constructor(private service: AssetServiceService) { }
 
-  public dsNames :Array<ListItem> = [];
+  public dsNames: Array<ListItem> = [];
+  public javaCollectionList: Array<ListItem> = [];
 
   ngOnInit(): void {
+
     this.service.getListTitle().subscribe(
 
-      (items : ListItem[] ) => {
-          this.dsNames = items;
+      (items: ListItem[]) => {
+        this.dsNames = items;
+      }
+
+    )
+
+
+    this.service.getJavaCollectionList().subscribe(
+
+      (items: ListItem[]) => {
+        this.javaCollectionList = items;
       }
 
     )
