@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ListItem } from 'src/assets/models/ListItem';
 import { environment } from 'src/environments/environment'
 @Injectable({
@@ -20,5 +20,10 @@ export class AssetServiceService {
 
   getJavaCollectionList(){
     return this.http.get<ListItem[]>(environment.JAVA_COLLECTION_LIST);
+  }
+
+  getTheHTMLDoc(path: string){
+    const headers = new HttpHeaders().set('Content-Type', 'text/html');
+    return this.http.get(path,  {headers, responseType: 'text'})
   }
 }

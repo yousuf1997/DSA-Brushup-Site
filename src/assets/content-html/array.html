@@ -1,0 +1,71 @@
+<div style="font-weight: bolder;"> <b>What is Array?</b>
+  <div>
+    <p style="font-weight: lighter;">An Array is a group of elments that are identified by an index. First index of the
+      array will be 0, and
+      the last index will be n-1 (n : number of elements). In memory the elements are stored next to each other.
+    </p>
+  </div>
+</div>
+
+<!-- <div style="font-weight: bolder;">Conceptual illusration of Array
+       <div>
+         <img class="img-fluid" src="../../assets/images/array_drawing.PNG">
+       </div>
+     </div> -->
+
+<div style="font-weight: bolder;"><b>Advantages of Array</b>
+  <ul style="font-weight: lighter; ">
+    <li>Easy retrieval of an element, it will take only O(1) time.</li>
+    <li>2D Array repersents matrices.</li>
+    <li>Easy to apply or implement sorting algorithms to sort the array.</li>
+    <li>It's convenient to repersent many data strucutures such as Trees, and Hash Map.</li>
+  </ul>
+</div>
+
+<div style="font-weight: bolder;"><b>Disadvantages of Array</b>
+  <ul style="font-weight: lighter; ">
+    <li>The size of an array is fixed.</li>
+    <li>To extend the array, you have to create a new array with greater size, and then copy the elments from old array
+      to the new one</li>
+    <li>If the index of an element is unknown, then linear iteration has to be performed to check for an element.</li>
+  </ul>
+</div>
+
+<div style="font-weight: bolder;;"><b>Array in Java</b>
+  <div style="font-weight: lighter;">
+    <p>To delcare Array <span class="text-muted">[We will declaring Array of int]</span></p>
+    <code class="code-block">int items = new int[4];</code>
+
+    <br>
+    <p><b>To Add an element</b></p>
+    <code class="code-block">
+             items[0] = 13;
+             <br>
+             items[1] = 5;
+             <br>
+             items[2] = 45;
+             <br>
+             items[3] = 98;
+           </code>
+    <br>
+    <p><b>Invalid Index</b></p>
+    <code class="code-block">items[4] = 76;</code>
+    <br>
+    <p>An index 4 is invalid, even though we know that the array can have 4 elements, but the last index is always n -
+      1, in this case n = 4, then the last index we can have is 4 - 1 which is 3. Any thing greater than this index will
+      results in <code>Index Out Of Range Exception</code>.</p>
+  </div>
+
+  <div style="font-weight: lighter;">
+    <p><b>To iterate elements in Array</b></p>
+    <code class="code-block">
+
+             for(int i = 0; i &lt; items.length; i++)  &lcub;
+               <br>
+               &nbsp;&nbsp; System.out.println(items[i]);
+               <br>
+               &rcub; 
+
+           </code>
+  </div>
+</div>

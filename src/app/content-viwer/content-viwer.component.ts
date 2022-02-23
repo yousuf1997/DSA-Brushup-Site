@@ -13,6 +13,17 @@ export class ContentViwerComponent implements OnInit {
   constructor(private service: AssetServiceService) { }
 
   ngOnInit(): void {
+
+
+    this.service.getTheHTMLDoc('../../../assets/content-html/arrayList.html').subscribe(
+      (data : any) => {
+        console.log(data)
+          this.currentRenderData = data;
+      }
+    )
+
   }
+
+ 
 
 }

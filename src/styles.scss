@@ -52,3 +52,18 @@ body{
     color: black;
     display: block;
 }
+
+.info-bar{
+    background-color: #FADA5E;
+    padding: 1.5em;
+    border-radius: 1em;
+    color: black;
+    display: block;
+    border-left-color: $base-background-color3; 
+    border-left-width: 1em;
+    font-size: 0.9em;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
