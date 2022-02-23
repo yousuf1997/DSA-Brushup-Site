@@ -7,54 +7,108 @@
 
 
   <p><b>How to initilize ArrayList?</b></p>
+  <div class="note-comment-block">
+    We are allowed to use only the wrapper classes for the collections generic type.
+  </div>
+  <br>
   <code class="code-block">
-    // Note : We are allowed to use only the wrapper classes for the collections generic type.
-    <br>
-    ArrayList&lt;Integer&gt; items = new ArrayList&lt;Integer&gt;();
+    <b>ArrayList&lt;Integer&gt; items = new ArrayList&lt;Integer&gt;();</b>
   </code>
   <br>
   <p><b>How to add elements to the ArrayList?</b></p>
   <code class="code-block">
-    items.add(34);
+   <b> items.add(34);</b>
     <br>
-    items.add(42);
+    <b>items.add(42);</b>
     <br>
-    items.add(11);
+    <b>items.add(11);</b>
     <br>
-    items.add(97);
+    <b>items.add(97);</b>
     <br>
-    items.add(87);
+    <b>items.add(87);</b>
   </code>
   <br>
   <p><b>How to check if an element is present?</b></p>
+  <div class="note-comment-block">
+    if presents then it will return true else false
+  </div>
+  <br>
   <code class="code-block">
-    // if presents then it will return true else false
-    <br>
-    items.contains(11);
+    <b>items.contains(11);</b>
   </code>
   <br>
   <p><b>How to get an element of an index?</b></p>
+  <div class="note-comment-block">
+    Make sure the index is within the range otherwise it will throw IndexOutOfBoundException
+  </div>
+  <br>
   <code class="code-block">
-    // Make sure the index is within the range otherwise it will throw IndexOutOfBoundException
-    <br>
-    items.get(1);
-    <br>
-    // the above code will return 42
+    <b>items.get(1);</b>
+  </code>
+  <br>
+  <div class="note-comment-block">
+    The above code will return 42
+  </div>
+ 
+  <br>
+  <p><b>How to set an element to an index?</b></p>
+  <div class="note-comment-block">
+    First paramenter is the index, and the second parameter is the element you will add it to that index.
+  </div>
+  <br>
+  <code class="code-block">
+   <b> items.set(1, 90);</b>
   </code>
   <br>
   <p><b>How to remove an element by an index?</b></p>
+  <div class="note-comment-block">
+    Make sure the index is within the range otherwise it will throw IndexOutOfBoundException
+  </div>
+  <br>
   <code class="code-block">
-    // Make sure the index is within the range otherwise it will throw IndexOutOfBoundException
-    <br>
-    items.remove(1);
-    <br>
-    // the above code will remove the value 42 
+    <b>items.remove(1);</b>
   </code>
+  <br>
+  <div class="note-comment-block">
+    The above code will remove the value 42 
+  </div>
+
   <br>
   <p><b>How to check the size of the ArrayList?</b></p>
   <code class="code-block">
-    items.size();
+    <b>items.size();</b>
   </code>
   <br>
+  <p><b>How to check if the ArrayList is empty?</b></p>
+  <code class="code-block">
+    <b>items.isEmpty();</b>
+  </code>
+  <br>
+  <div class="note-comment-block">
+    The above code will retrun true if the ArrayList has any elements, otherwise false.
+  </div>
+  <br>
+  <p><b>How to iterate the ArrayList?</b></p>
+    <ol>
+      <li>
+        <code class="code-block">
+         <b> for(int i = 0; i &lt; items.size(); i++)  &lcub;</b>
+          <br>
+          <b>&nbsp;&nbsp; System.out.println(items[i]);</b>
+          <br>
+          <b>&rcub;</b> 
+        </code>
+      </li>
+      <br>
+      <li>
+        <code class="code-block">
+          <b>for(Integer i : items)  &lcub;</b>
+          <br>
+          <b>&nbsp;&nbsp; System.out.println(items[i]);</b>
+          <br>
+          <b>&rcub;</b> 
+        </code>
+      </li>
+    </ol>
   
 </div>
