@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+//@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 // $base-background-color: #445144;
 $base-background-color1: #594F4F;
 $base-background-color2: #547980;
@@ -9,9 +10,11 @@ $base-background-color4: #9DE0AD;
 $base-background-color5: #E5FCC2 ;
 $base-background-color6: #83AF9B;
 .base-font{
-    font-family: 'Quicksand', sans-serif;
+    // font-family: 'Quicksand', sans-serif;
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Hubballi', cursive;
     font-size: 1.2em;
-    letter-spacing: 0.1em;
+    // letter-spacing: 0.1em;
 }
 
 
