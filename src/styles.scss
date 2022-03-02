@@ -20,7 +20,9 @@ $base-background-color6: #83AF9B;
 
 
 .high_lighted{
-    font-family: 'Quicksand', sans-serif;
+    @extend .base-font;
+    letter-spacing: 0.2em;
+    font-weight: bold;
     color: whitesmoke;
     background-color: $base-background-color1;
     display: inline;
