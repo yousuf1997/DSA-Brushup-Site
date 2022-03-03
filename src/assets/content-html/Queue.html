@@ -1,0 +1,56 @@
+<div>
+  <div class="info-bar">Note: This tutorials go over the basics of the Stack operations only. If you would like to learn
+    more about the functionality please visit
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html">here</a>
+  </div>
+  <br>
+  <p>What is Queue?</p>
+  <div class="note-comment-block">
+     Behavior of a Queue is similar to the real life queue. In which the first person that entered the queue will be removed first. Likewise the elements are inserted and removed in First In First out (FIFO) manner.
+  </div>
+  <br>
+  <p>How to initialize a Queue?</p>
+  <div class="note-comment-block">
+    Queue itself is an interface, so we are going to use <b>ArrayDeque</b> implementation. We can also use LikedList implementation.
+  </div>
+  <br>
+  <code class="code-block">
+    Queue&lt;Integer&gt; queue = new ArrayDeque&lt;Integer&gt;();
+  </code>
+  <br>
+  <p>How to add elements to the Queue?</p>  
+  <code class="code-block">
+    queue.add(34);
+    <br>
+    queue.add(42);
+    <br>
+    queue.add(11);
+    <br>
+    queue.add(97);
+    <br>
+    queue.add(87);
+  </code>
+  <br>
+  <p>How to check if an element is present in the Queue?</p>  
+  <code class="code-block">
+    queue.contains(97);
+  </code>
+  <br>
+  <p>How to get the top element without removing it?</p>  
+  <code class="code-block">
+    queue.peek();
+  </code>
+  <br>
+  <p>How to get the top element and remove it?</p>  
+  <code class="code-block">
+    queue.pop();
+  </code>
+  <br>
+  <p>How to iterate the Queue and remove the elements?</p>
+  <code class="code-block">
+     while(!queue.isEmpty()){
+       <br>
+        &nbsp; System.out.println(queue.poll());
+       <br>
+     }
+  </code>

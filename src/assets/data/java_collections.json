@@ -17,7 +17,11 @@
         }
         ,
         {
-            "title" : "PriorityQue",
+            "title" : "PriorityQueue",
+            "description" : "An Elements are stored in adjacent order." 
+        },
+        {
+            "title" : "HashMap",
             "description" : "An Elements are stored in adjacent order." 
         },
         {

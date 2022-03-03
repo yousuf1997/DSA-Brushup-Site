@@ -23,10 +23,16 @@
   </div> -->
 
   <div class="row">
-
+   
     <div class="col" style="padding: 1em;">
       <h5 style="color: white; font-weight: bold;">Java Collections</h5>
       <div class="d-flex justify-content-center flex-column">
+        <div class="p-2">
+          <div class="info-bar">Note: The following collections tutorials are curated to go over only the basic operations that are 
+            can be used to solve coding interview problems. Bascialy the most of the tutorials focused on add, remove, find, and iteration operations.
+            Goal is to brush up the basics of collections in short time.
+          </div>
+        </div>
         <div class="p-2" *ngFor="let item of javaCollectionList">
           <a routerLink="/content-viewer/{{item.title}}" style="text-decoration: none; color: black">
             <div class="card card-customization shadow-sm" style="border-left-color: #45ADA8;">
