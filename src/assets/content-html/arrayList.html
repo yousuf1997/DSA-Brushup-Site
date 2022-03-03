@@ -3,47 +3,53 @@
     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html">here</a>
   </div>
   <br>
-  <b>What is ArrayList</b>
-
-
-  <p><b>How to initilize ArrayList?</b></p>
+ <p> What is ArrayList?</p>
+ <div class="note-comment-block">
+  An ArrayList is similar to array but with dynamic size.    
+</div>
+  <p>What is the base interface?</p>
   <div class="note-comment-block">
-    We are allowed to use only the wrapper classes for the collections generic type.
+    List
+  </div>
+
+  <p>How to initilize ArrayList?</p>
+  <div class="note-comment-block">
+    We are allowed to use only the objects in the generic. For primitives uses wrapper classes.
   </div>
   <br>
   <code class="code-block">
-    <b>ArrayList&lt;Integer&gt; items = new ArrayList&lt;Integer&gt;();</b>
+    ArrayList&lt;Integer&gt; items = new ArrayList&lt;Integer&gt;();
   </code>
   <br>
-  <p><b>How to add elements to the ArrayList?</b></p>
+  <p>How to add elements to the ArrayList?</p>
   <code class="code-block">
-   <b> items.add(34);</b>
+    items.add(34);
     <br>
-    <b>items.add(42);</b>
+    items.add(42);
     <br>
-    <b>items.add(11);</b>
+    items.add(11);
     <br>
-    <b>items.add(97);</b>
+    items.add(97);
     <br>
-    <b>items.add(87);</b>
+    items.add(87);
   </code>
   <br>
-  <p><b>How to check if an element is present?</b></p>
+  <p>How to check if an element is present?</p>
   <div class="note-comment-block">
     if presents then it will return true else false
   </div>
   <br>
   <code class="code-block">
-    <b>items.contains(11);</b>
+    items.contains(11);
   </code>
   <br>
-  <p><b>How to get an element of an index?</b></p>
+  <p>How to get an element of an index?</p>
   <div class="note-comment-block">
     Make sure the index is within the range otherwise it will throw IndexOutOfBoundException
   </div>
   <br>
   <code class="code-block">
-    <b>items.get(1);</b>
+    items.get(1);
   </code>
   <br>
   <div class="note-comment-block">
@@ -51,22 +57,22 @@
   </div>
  
   <br>
-  <p><b>How to set an element to an index?</b></p>
+  <p>How to set an element to an index?</p>
   <div class="note-comment-block">
     First paramenter is the index, and the second parameter is the element you will add it to that index.
   </div>
   <br>
   <code class="code-block">
-   <b> items.set(1, 90);</b>
+    items.set(1, 90);
   </code>
   <br>
-  <p><b>How to remove an element by an index?</b></p>
+  <p>How to remove an element by an index?</p>
   <div class="note-comment-block">
     Make sure the index is within the range otherwise it will throw IndexOutOfBoundException
   </div>
   <br>
   <code class="code-block">
-    <b>items.remove(1);</b>
+    items.remove(1);
   </code>
   <br>
   <div class="note-comment-block">
@@ -74,39 +80,39 @@
   </div>
 
   <br>
-  <p><b>How to check the size of the ArrayList?</b></p>
+  <p>How to check the size of the ArrayList?</p>
   <code class="code-block">
-    <b>items.size();</b>
+    items.size();
   </code>
   <br>
-  <p><b>How to check if the ArrayList is empty?</b></p>
+  <p>How to check if the ArrayList is empty?</p>
   <code class="code-block">
-    <b>items.isEmpty();</b>
+    items.isEmpty();
   </code>
   <br>
   <div class="note-comment-block">
     The above code will retrun true if the ArrayList has any elements, otherwise false.
   </div>
   <br>
-  <p><b>How to iterate the ArrayList?</b></p>
+  <p>How to iterate the ArrayList?</p>
     <ol>
       <li>
         <code class="code-block">
-         <b> for(int i = 0; i &lt; items.size(); i++)  &lcub;</b>
+          for(int i = 0; i &lt; items.size(); i++)  &lcub;
           <br>
-          <b>&nbsp;&nbsp; System.out.println(items[i]);</b>
+          &nbsp;&nbsp; System.out.println(items[i]);
           <br>
-          <b>&rcub;</b> 
+          &rcub; 
         </code>
       </li>
       <br>
       <li>
         <code class="code-block">
-          <b>for(Integer i : items)  &lcub;</b>
+          for(Integer i : items)  &lcub;
           <br>
-          <b>&nbsp;&nbsp; System.out.println(items[i]);</b>
+          &nbsp;&nbsp; System.out.println(items[i]);
           <br>
-          <b>&rcub;</b> 
+          &rcub; 
         </code>
       </li>
     </ol>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AssetServiceService } from '../service/asset-service.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-content-viwer',
@@ -9,18 +10,25 @@ import { AssetServiceService } from '../service/asset-service.service';
 export class ContentViwerComponent implements OnInit {
 
   currentRenderData : string = '';
+  title : string = '';
 
-  constructor(private service: AssetServiceService) { }
+  constructor(private service: AssetServiceService, private activatedRoute : ActivatedRoute) { }
 
   ngOnInit(): void {
 
 
-    this.service.getTheHTMLDoc('../../../assets/content-html/arrayList.html').subscribe(
-      (data : any) => {
-        console.log(data)
-          this.currentRenderData = data;
-      }
-    )
+    this.activatedRoute.params.subscribe((params: any) => {
+
+      this.service.getTheHTMLDoc(`../../../assets/content-html/${params['page']}.html`).subscribe(
+        (data : any) => {
+            this.title = params['page'];
+            this.currentRenderData = data;
+        }
+      )
+        
+      });
+
+  
 
   }
 

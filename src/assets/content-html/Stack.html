@@ -1,0 +1,76 @@
+<div>
+  <div class="info-bar">Note: This tutorials go over the basics of the Stack operations only. If you would like to learn
+    more about the functionality please visit
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html">here</a>
+  </div>
+  <br>
+  <p>What is Stack?</p>
+  <div class="note-comment-block">
+    Stack is data strucutre where elements are inserted and removed in Last In First Out manner. Think of it as stacking
+    plates, and removing the plates from the top.
+  </div>
+  <br>
+  <p>What is the base interface of Stack?</p>
+  <div class="note-comment-block">
+    List (Interface) -> LinkedList (Class) -> Stack (Class)
+
+  </div>
+  <br>
+  <p>How to initilize Stack?</p>
+  <div class="note-comment-block">
+    We are allowed to use only the wrapper classes for the collections generic type.
+  </div>
+  <br>
+  <code class="code-block">
+    Stack&lt;Integer&gt; stack = new Stack&lt;Integer&gt;();
+  </code>
+  <br>
+  <p>How to add elements to Stack?</p>
+  <code class="code-block">
+    stack.push(34);
+    <br>
+    stack.push(42);
+    <br>
+    stack.push(11);
+    <br>
+    stack.push(97);
+    <br>
+    stack.push(87);
+  </code>
+  <br>
+  <p>How to check if an element is present?</p>
+  <div class="note-comment-block">
+    If presents it will return true else false.
+  </div>
+  <br>
+  <code class="code-block">
+    stack.contains(97);
+  </code>
+  <br>
+  <p>How to search for an element?</p>
+  <div class="note-comment-block">
+    It will return the position of the element.
+  </div>
+  <br>
+  <code class="code-block">
+    stack.search(97);
+  </code>
+  <br>
+  <p>How to get the top element without removing it?</p>
+  <code class="code-block">
+    stack.peek();
+  </code>
+  <br>
+  <p>How to get the top element and also removing it?</p>
+  <code class="code-block">
+    stack.pop();
+  </code>
+  <br>
+  <p>How to iterate the stack and removing the elements?</p>
+  <code class="code-block">
+     while(!stack.isEmpty()){
+       <br>
+        &nbsp; System.out.println(stack.pop());
+       <br>
+     }
+  </code>

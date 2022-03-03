@@ -1,7 +1,7 @@
 <div class="container base-font" style="padding-top: 1em;">
   <div class="row">
 
-    <div class="col" style="padding: 1em;">
+    <!-- <div class="col" style="padding: 1em;">
       <h5 style="color: white; font-weight: bold;">Data Structure</h5>
       <div class="d-flex justify-content-center flex-column">
         <div class="p-2" *ngFor="let ds of dsNames">
@@ -20,7 +20,7 @@
 
     </div>
 
-  </div>
+  </div> -->
 
   <div class="row">
 
@@ -28,7 +28,7 @@
       <h5 style="color: white; font-weight: bold;">Java Collections</h5>
       <div class="d-flex justify-content-center flex-column">
         <div class="p-2" *ngFor="let item of javaCollectionList">
-          <a routerLink="/content-viewer" style="  text-decoration: none; color: black">
+          <a routerLink="/content-viewer/{{item.title}}" style="text-decoration: none; color: black">
             <div class="card card-customization shadow-sm" style="border-left-color: #45ADA8;">
               <div class="card-body">
                 <h5 class="card-title" style="font-weight: bold;">{{item.title}}</h5>

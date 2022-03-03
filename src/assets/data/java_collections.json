@@ -4,19 +4,11 @@
             "description" : "A collection of elements that are stored in continous memory." 
         },
         {
-            "title" : "LinkedList",
-            "description" : "An Elements are stored in adjacent order." 
-        },
-        {
-            "title" : "Vector",
-            "description" : "An Elements are stored in adjacent order." 
-        },
-        {
             "title" : "Stack",
             "description" : "An Elements are stored in adjacent order." 
         },
         {
-            "title" : "PriorityQueue",
+            "title" : "Queue",
             "description" : "An Elements are stored in adjacent order." 
         },
         {
@@ -25,19 +17,11 @@
         }
         ,
         {
-            "title" : "ArrayDeque",
+            "title" : "PriorityQue",
             "description" : "An Elements are stored in adjacent order." 
         },
         {
             "title" : "HashSet",
-            "description" : "An Elements are stored in adjacent order." 
-        },
-        {
-            "title" : "SortedSet",
-            "description" : "An Elements are stored in adjacent order." 
-        },
-        {
-            "title" : "TreeSet",
             "description" : "An Elements are stored in adjacent order." 
         }
     ]
