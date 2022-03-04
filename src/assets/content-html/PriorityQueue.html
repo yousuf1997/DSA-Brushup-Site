@@ -1,0 +1,58 @@
+<div>
+  <div class="info-bar">Note: This tutorials go over the basics of the PriorityQueue operations only. If you would like to learn
+    more about the functionality please visit
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/PriorityQueue.html">here</a>
+  </div>
+  <br>
+  <p>What is PriorityQueue?</p>
+  <div class="note-comment-block">
+    A PriorityQueue is as name suggest that the elements will be organzied depends on the priority of the elmement. 
+    Internally it maintains heap, and there are two types of heap min and max. The top value of min heap wil always
+     smaller than the rest of the values in the queue and max is vice versa. By default it orders the elment its according the natural ordering of the object usually this is done using compareTo() internally.
+  </div>
+  <br>
+  <p>How to initialize PriorityQueue?</p>
+  <div class="code-block">
+    PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;Integer&gt;();
+  </div>
+  <br>
+  <p>How to add elements to the PriorityQueue?</p>  
+  <code class="code-block">
+    pq.add(34);
+    <br>
+    pq.add(42);
+    <br>
+    pq.add(11);
+    <br>
+    pq.add(97);
+    <br>
+    pq.add(87);
+  </code>
+  <br>
+  <div class="note-comment-block">
+    The elments above will be stored in sorted order (default : ascending) despite the insertion order. Sorted order : 11, 34, 42, 87, 97. As you can see by default its using min heap.
+  </div>
+  <br>
+  <p>How to check if an element is present in the PriorityQueue?</p>  
+  <code class="code-block">
+    pq.contains(97);
+  </code>
+  <br>
+  <p>How to get the top element without removing it?</p>  
+  <code class="code-block">
+    pq.peek();
+  </code>
+  <br>
+  <p>How to get the top element and also remove it?</p>  
+  <code class="code-block">
+    pq.pop();
+  </code>
+  <br>
+  <p>How to iterate the PriorityQueue and remove the elements?</p>
+  <code class="code-block">
+     while(!queue.isEmpty()){
+       <br>
+        &nbsp; System.out.println(pq.poll());
+       <br>
+     }
+  </code>
