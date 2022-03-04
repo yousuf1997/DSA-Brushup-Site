@@ -56,3 +56,36 @@
        <br>
      }
   </code>
+  <br>
+  <p>If you like to order element based on some other sorting logic you can implement compartor interface. Lets says that we want to order the element by descending order.</p>
+  <div class="note-comment-block">
+      You have to return the following values to define the ordering.
+      <ul>
+        <li>Return positive value (1) to state that the first paramenter is bigger than the second.</li>
+        <li>Return negative value (-1) to state that the first paramenter is smaller than the second.</li>
+        <li>Return 0 value to state that both values are equal.</li>
+      </ul>
+  </div>
+  <br>
+  <code class="code-block">
+  
+    public class DescendingComparator implements Comparator&ltInteger&gt {
+      <br>
+      @Override
+      <br>
+      public int compare(Integer o1, Integer o2) {
+        <br>
+        &nbsp;&nbsp;&nbsp; return o1 - o2;
+        <br>
+      &nbsp;}
+      <br>
+    }
+  </code>
+  <br>
+  <div class="note-comment-block">
+    When you initialize the PriorityQueue you pass the compartor to the constructor as follows.
+  </div>
+  <br>
+  <div class="code-block">
+    PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;Integer&gt;( new DescendingComparator() );
+  </div>
