@@ -1,0 +1,83 @@
+<div>
+  <div class="info-bar">Note: This tutorials go over the basics of the Stack operations only. If you would like to learn
+    more about the functionality please visit
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html">here</a>
+  </div>
+  <br>
+  <p>What is Deque?</p>
+  <div class="note-comment-block">
+     Behavior of a Deque is similar Queue, and with addition that the elements can be added in the front and removed from the front as well. It is combination of LIFO and FIFO.
+  </div>
+  <br>
+  <p>How to initialize a Deque?</p>
+  <div class="note-comment-block">
+    Deque itself is an interface, so we are going to use <b>ArrayDeque</b> implementation. We can also use LikedList implementation.
+  </div>
+  <br>
+  <code class="code-block">
+    Deque&lt;Integer&gt; deque = new ArrayDeque&lt;Integer&gt;();
+  </code>
+  <br>
+  <p>How to add elements to the Deque (Add a like regular queue, add from the back)?</p>  
+  <code class="code-block">
+    deque.addLast(34);
+    <br>
+    deque.addLast(42);
+    <br>
+    deque.addLast(11);
+    <br>
+    deque.addLast(97);
+    <br>
+    deque.addLast(87);
+  </code>
+  <br>
+  <p>How to add elements to the Deque (Add from the front)?</p>  
+  <code class="code-block">
+    deque.addFirst(14);
+    <br>
+    deque.addFirst(62);
+    <br>
+    deque.addFirst(81);
+    <br>
+    deque.addFirst(70);
+    <br>
+    deque.addFirst(71);
+  </code>
+  <br>
+  <p>How to check if an element is present in the Deque?</p>  
+  <code class="code-block">
+    deque.contains(97);
+  </code>
+  <br>
+  <p>How to get the front element without removing it?</p>  
+  <code class="code-block">
+    deque.peekFirst();
+  </code>
+  <br>
+  <p>How to get the last element without removing it?</p>  
+  <code class="code-block">
+    deque.peekLast();
+  </code>
+  <br>
+  <p>How to get the front element and remove it?</p>  
+  <code class="code-block">
+    deque.pollFirst();
+  </code>
+  <br>
+  <p>How to get the last element and remove it?</p>  
+  <code class="code-block">
+    deque.pollLast();
+  </code>
+  <br>
+  <p>How to iterate the Deque and remove the elements?</p>
+  <div class="note-comment-block">
+    The following remove the elements like normal queue (LIFO), and you can also use pollLast() if you would like to remove from the last.
+  </div>  
+  <br>
+  <code class="code-block">
+     while(!deque.isEmpty()){
+       <br>
+        &nbsp; System.out.println(deque.pollFirst());
+       <br>
+     }
+  </code>
