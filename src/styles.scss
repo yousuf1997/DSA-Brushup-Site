@@ -2,6 +2,7 @@
 //@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 // $base-background-color: #445144;
 $base-background-color1: #594F4F;
 $base-background-color2: #547980;
@@ -56,6 +57,7 @@ body{
     border-radius: 1em;
     color: black;
     display: block;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .info-bar{
