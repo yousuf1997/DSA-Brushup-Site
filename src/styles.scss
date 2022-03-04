@@ -49,6 +49,8 @@ $base-background-color6: #83AF9B;
 body{
     background-image: linear-gradient($base-background-color2, $base-background-color1);
     background-color: $base-background-color1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .code-block{
