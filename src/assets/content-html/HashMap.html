@@ -1,0 +1,56 @@
+
+  <div class="info-bar">Note: This tutorials go over the basics of the Stack operations only. If you would like to learn
+    more about the functionality please visit
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html">here</a>
+  </div>
+  <br>
+  <p>What is HashMap?</p>
+  <div class="note-comment-block">
+    HashMap is a collections which stores key and value as a pair. Retrieve values based on the key. It allows faster reterival of an element if the key is already known.
+    The first parameter is the key and the second is the value. Both needs to be an object. Primitives are not allowed in the generic.
+  </div>
+  <br>
+  <p>How to initialize a HashMap?</p>
+  <div class="note-comment-block">
+    Map interface can be used to initialize or direct implementation of HashMap can be used as well.
+  </div>
+  <br>
+  <code class="code-block">
+    Map&lt;Integer, String&gt; hashMap = new HashMap&lt;&gt;();
+  </code>
+  <br>
+  <p>How to add elements to HashMap?</p>
+  <div class="code-block">
+    hashMap.put(1 , "one");
+    <br>
+    hashMap.put(2 , "two");
+    <br>
+    hashMap.put(3 , "three");
+    <br>
+    hashMap.put(4 , "four");
+  </div>
+  <br>
+  <p>How to check if an element or key exists?</p>
+  <div class="note-comment-block">
+    <ul>
+      <li>
+        We check if a key exits by
+        <ul>
+          <br>
+          <li class="code-block">
+              hashMap.containsKey(3);
+          </li>
+        </ul>
+      </li>
+      <li>
+        We check if an element exits by
+        <ul>
+          <br>
+          <li class="code-block">
+              hashMap.containsValue("three");
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
