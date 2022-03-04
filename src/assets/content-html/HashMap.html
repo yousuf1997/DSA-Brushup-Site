@@ -53,4 +53,49 @@
       </li>
     </ul>
   </div>
-  
+  <br>
+  <p>How to replace an element in HashMap?</p>
+  <div class="note-comment-block">
+    We need to have a key. The first parameter is the key, and the second parameter is the value.
+  </div>
+  <br>
+  <div class="code-block">
+    hashMap.replace(3, "number three");
+  </div>
+  <br>
+  <p>How to replace an element in HashMap?</p>
+  <div class="note-comment-block">
+    We need to have a key, and the pass the key to the following function.
+  </div>
+  <br>
+  <div class="code-block">
+    hashMap.remove(3);
+  </div>
+  <br>
+  <p>How to get the key set?</p>
+  <div class="note-comment-block">
+    The following will return Set&lt;Integer&gt; 
+  </div>
+  <br>
+  <div class="code-block">
+    hashMap.keySet();
+  </div>
+  <br>
+  <p>How to get the values list?</p>
+
+  <div class="note-comment-block">
+    The following will return Collection&lt;Integer&gt;.
+  </div>
+  <br>
+  <div class="code-block">
+    hashMap.values();
+  </div>
+  <br>
+  <p>How to iterate HashMap?</p>
+  <div class="code-block">
+    for(Map.Entry&lt;Integer, String&gt; entry : hashMap){
+      <br>
+    &nbsp;&nbsp; System.out.println("Key : " + entry.getKey() " , Value : " + entry.getValue());
+    <br>
+    }
+  </div>
