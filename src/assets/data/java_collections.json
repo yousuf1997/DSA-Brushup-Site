@@ -1,8 +1,8 @@
  [
-        {
+    {
         "title" : "String",
         "description" : "A collection of elements that are stored in continous memory." 
-        },
+    },
         {
             "title" : "ArrayList",
             "description" : "A collection of elements that are stored in continous memory." 
