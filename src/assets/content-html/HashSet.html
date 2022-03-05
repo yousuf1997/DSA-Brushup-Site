@@ -1,0 +1,48 @@
+<div class="info-bar">Note: This tutorials go over the basics of the Stack operations only. If you would like to learn
+  more about the functionality please visit
+  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html">here</a>
+</div>
+<br>
+<p>What is HashSet?</p>
+<div class="note-comment-block">
+  HashMap is a collections which stores unique values and no duplicates.
+</div>
+<br>
+<p>How to initialize a HashMap?</p>
+<div class="note-comment-block">
+  Set interface can be used to initialize or direct implementation of HashSet can be used as well.
+</div>
+<br>
+<code class="code-block">
+    Set&lt;Integer, String&gt; hashset = new HashSet&lt;&gt;();
+  </code>
+<br>
+<p>How to add elements to HashSet?</p>
+<div class="code-block">
+  hashset.add(43);
+  <br>
+  hashset.add(56);
+  <br>
+  hashset.add(78);
+  <br>
+  hashset.add(90);
+</div>
+<br>
+<p>How to check if an element is present in the HashSet?</p>
+<code class="code-block">
+  hashset.contains(90);
+ </code>
+<br>
+<p>How to remove elements?</p>
+<code class="code-block">
+  hashset.remove(90);
+ </code>
+<br>
+<p>How to iterate HashSet?</p>
+<code class="code-block">
+  for(Integer val : hashSet)  &lcub;
+  <br>
+  &nbsp;&nbsp; System.out.println(val);
+  <br>
+  &rcub; 
+</code>
