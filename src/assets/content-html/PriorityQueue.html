@@ -89,3 +89,13 @@
   <div class="code-block">
     PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;Integer&gt;( new DescendingComparator() );
   </div>
+  <br>
+  <div class="note-comment-block">
+    If you are using an existing type such as Integer or String, you can use this simple way to order the elements in reverse order in
+    priority queue. To initiate the reverse order behavior during the initialization of the priority queue 
+    pass the first parameter takes the initial capacity, and the second is the rever order compartor. Default initial capactiy of the PriorityQueue is 11.
+  </div>
+  <br>
+  <div class="code-block">
+    PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;Integer&gt;(11, Collections.reverseOrder());
+  </div>
