@@ -1,35 +1,35 @@
  [
-    {
-        "title" : "String",
-        "description" : "A collection of elements that are stored in continous memory." 
-    },
+        {
+            "title" : "String",
+            "description" : "A String is an array of characters." 
+        },
         {
             "title" : "ArrayList",
             "description" : "A collection of elements that are stored in continous memory." 
         },
         {
             "title" : "Stack",
-            "description" : "An Elements are stored in adjacent order." 
+            "description" : "An elements are inserted in stacking order , and an elements are removed from the top (LIFO)." 
         },
         {
             "title" : "Queue",
-            "description" : "An Elements are stored in adjacent order." 
+            "description" : "A Queue behave likes a normal queue, an elements are inserted in similar fashion and the elements that are inserted first will be removed first (FIFO)." 
         },
         {
             "title" : "Deque",
-            "description" : "An Elements are stored in adjacent order." 
+            "description" : "A Deque behave as a combination of Stack and Queue (LIFO & FIFO)." 
         }
         ,
         {
             "title" : "PriorityQueue",
-            "description" : "An Elements are stored in adjacent order." 
+            "description" : "An elements are ordered based on their natural ordering." 
         },
         {
             "title" : "HashMap",
-            "description" : "An Elements are stored in adjacent order." 
+            "description" : "A HashMap takes a key and value. To retrive the value we have to use the key." 
         },
         {
             "title" : "HashSet",
-            "description" : "An Elements are stored in adjacent order." 
+            "description" : "A HashSet contains only unique values." 
         }
     ]

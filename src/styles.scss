@@ -85,3 +85,14 @@ body{
     font-size: 0.9em;
 }
  
+.email-block{
+    background-color: #25252a;
+    color: #e1e1e1;
+    padding: 1.5em;
+    border-radius: 1em;
+    a{
+        text-decoration: none;
+        color: #e1e1e1;
+        font-weight: bold;
+    }
+}
