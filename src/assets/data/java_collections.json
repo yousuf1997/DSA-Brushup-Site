@@ -1,7 +1,7 @@
  [
         {
-            "title" : "String",
-            "description" : "A String is an array of characters." 
+            "title" : "Basics",
+            "description" : "This section exposes the basic opertions of string, array, and characters that can be usefull to solve some problems." 
         },
         {
             "title" : "ArrayList",

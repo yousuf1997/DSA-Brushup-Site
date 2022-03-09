@@ -1,0 +1,152 @@
+  <div class="info-bar">Note: This tutorial focus on basic materials that can be usefull solving the coding questions.</div>
+  <br>
+
+  <div >
+      <p> What is Array?</p>
+      <div class="note-comment-block">
+            A collections of elements that are stored in contigious memory.
+        </div>
+        <br>
+        <p> How to initialize Array?</p>
+        <div class="note-comment-block">
+            You have to specify the number of elements when you initialize elements.
+        </div>
+        <br>
+        <div class="code-block">
+              int[] array = new int[2];
+       </div>
+       <br>
+       <p> How to add elements to Array?</p>
+       <div class="note-comment-block">
+           You have to add elements by index, the first index will be always 0. So if the array has size of 2, then the first index 0, and last index is 1 
+           (size of array - 1).
+       </div>
+       <br>
+       <div class="code-block">
+             array[0] = 9;
+             <br>
+             array[1] = 4;
+      </div>
+      <br>
+      <p> How to find the length of Array?</p>
+      <div class="code-block">
+            array.length;
+     </div>
+     <br>
+     <p>How to iterate the Array?</p>
+     <code class="code-block">
+           for(int i = 0; i &lt; array.length; i++){
+             <br>
+             &nbsp;&nbsp; System.out.println(array[i]);
+             <br>
+           }
+     </code>
+     <br>
+     <p> How to sort the Array?</p>
+     <div class="code-block">
+           Arrays.sort(array);
+    </div>
+    <br>
+    <p> How to sort the Array with lambda (Above JDK 8)?</p>
+    <div class="code-block">
+          Arrays.sort(array, (a,b) -> { // logic });
+   </div>
+    <br>
+    <p> How to copy Array?</p>
+    <div class="code-block">
+          Arrays.asCopy(array);
+   </div>
+    <br>
+    <p> How to convert Array to List?</p>
+    <div class="code-block">
+          Arrays.asList(array);
+   </div>
+    <br>
+  </div>
+
+  <!-- String Section -->
+  <hr>
+ <div>
+      <p> What is String?</p>
+      <div class="note-comment-block">
+         A String is basically array of characters. Usually contains text. String is immutable, which means programmer assigns value
+         to a String, and reassign another value to the same variable, the previous variable will remain in the string pool. 
+     </div>
+     <br>
+     <p>How to initialzie a String?</p>
+     <div class="note-comment-block">
+         <ul>
+           <li>There are two ways to initialize the string.
+              <ol>
+                  <li>
+                       Initialize a String using string literals.
+                       <br>
+                       <code class="code-block">
+                           String s = "I am a String Literal";
+                       </code>
+                  </li>
+                  <li>
+                       Initialize a String using String object.
+                       <br>
+                       <code class="code-block">
+                           String s = new String("I am a String Object");
+                       </code>
+                  </li>
+              </ol>
+           </li>
+         </ul>
+     
+     </div>
+     <br>
+     <p>How to check if two strings are equal?</p>
+     <div class="note-comment-block">
+     
+        This is bit tricky becuase we may assume that we may '==' operator to compare two strings. This double equal operator compares the memory locations of a string by default. 
+        If you have two strings with exactly the same content, and one of the string was intialized using the literals, and other one was using the object.
+        Depsite the content is the same but each of the content resides in different memory locations thus it returns false. The correct way to compare is follows
+     
+     </div>
+     <br>
+     <code class="code-block">
+     
+           string1.equals(string2);
+     </code>
+     <br>
+     <div class="note-comment-block">
+       If you would like to ignore the case.
+     </div>
+     <br>
+     <code class="code-block">
+     
+           string1.equalsIgnoreCase(string2);
+     </code>
+     <br>
+     <p>How to get a particular character of a String?</p>
+     <div class="note-comment-block">
+         Since the String is array of characters, we can access the character by the index. Make sure the index you pass
+         to the chatAt() does not exceed the size of the string n - 1. 
+     </div>
+     <br>
+     <code class="code-block">
+           string1.charAt(2);
+     </code>
+     <br>
+     <p>How to check if particular sequence of a character exists in the String?</p>
+     <code class="code-block">
+           string1.contains("water");
+     </code>
+     <br>
+     <p>How to get length of a String?</p>
+     <code class="code-block">
+           string1.length();
+     </code>
+     <br>
+     <p>How to iterate the characters of a String?</p>
+     <code class="code-block">
+           for(int i = 0; i &lt; string1.length(); i++){
+             <br>
+             &nbsp;&nbsp; System.out.println(string1.charAt(i));
+             <br>
+           }
+     </code>
+ </div>
