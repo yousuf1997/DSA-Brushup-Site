@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AssetServiceService } from '../service/asset-service.service';
 import { ActivatedRoute } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-content-viwer',
@@ -12,7 +13,7 @@ export class ContentViwerComponent implements OnInit {
   currentRenderData : string = '';
   title : string = '';
 
-  constructor(private service: AssetServiceService, private activatedRoute : ActivatedRoute) { }
+  constructor(private service: AssetServiceService, private activatedRoute : ActivatedRoute, private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
 
@@ -28,8 +29,10 @@ export class ContentViwerComponent implements OnInit {
         
       });
 
-  
+  }
 
+  scroll(id : string){
+    this.scroller.scrollToAnchor(id);
   }
 
  
