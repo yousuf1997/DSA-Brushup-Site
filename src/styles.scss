@@ -54,7 +54,7 @@ body{
     -moz-osx-font-smoothing: grayscale;
 
 }
-
+// FFDD93
 .code-block{
     background-color: #37464d;
     padding: 1.5em;
@@ -84,6 +84,11 @@ body{
     background-color:  #D6E3B5;
     padding: 1.0em;
     font-size: 0.9em;
+}
+
+.time-complexity{
+    @extend .note-comment-block;
+    background-color:  #FFDD93;
 }
  
 .email-block{
