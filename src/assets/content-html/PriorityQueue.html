@@ -29,6 +29,8 @@
     pq.add(87);
   </code>
   <br>
+  <div class="time-complexity">Time complexity : O(log n)</div>
+  <br>
   <div class="note-comment-block">
     The elments above will be stored in sorted order (default : ascending) despite the insertion order. Sorted order : 11, 34, 42, 87, 97. As you can see by default its using min heap.
   </div>
@@ -38,15 +40,27 @@
     pq.contains(97);
   </code>
   <br>
+  <div class="time-complexity">Time complexity : O(n)</div>
+  <br>
   <p>How to get the top element without removing it?</p>  
+  <div class="note-comment-block">
+      If its a max queue, the following will return the max element in the queue otherwise min element.
+  </div>
+   <br>
   <code class="code-block">
     pq.peek();
   </code>
   <br>
   <p>How to get the top element and also remove it?</p>  
+  <div class="note-comment-block">
+    If its a max queue, the following will return the max element in the queue otherwise min element.
+</div>
+<br>
   <code class="code-block">
     pq.pop();
   </code>
+  <br>
+  <div class="time-complexity">Time complexity : O(log n)</div>
   <br>
   <p>How to iterate the PriorityQueue and remove the elements?</p>
   <code class="code-block">
@@ -56,6 +70,8 @@
        <br>
      }
   </code>
+  <br>
+  <div class="time-complexity">Time complexity : O(n)</div>
   <br>
   <p>If you like to order element based on some other sorting logic you can implement compartor interface. Lets says that we want to order the element by descending order.</p>
   <div class="note-comment-block">
