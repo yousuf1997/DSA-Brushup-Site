@@ -32,4 +32,9 @@
             "title" : "HashSet",
             "description" : "A HashSet contains only unique values." 
         }
+        ,
+        {
+            "title" : "TreeMap",
+            "description" : "A map which inserts elements based on elements natural ordering. (Ordered Map)" 
+        }
     ]
