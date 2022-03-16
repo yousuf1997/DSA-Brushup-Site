@@ -12,6 +12,7 @@ export class ContentViwerComponent implements OnInit {
 
   currentRenderData : string = '';
   title : string = '';
+  loading : boolean = true;
 
   constructor(private service: AssetServiceService, private activatedRoute : ActivatedRoute, private scroller: ViewportScroller) { }
 
@@ -24,6 +25,8 @@ export class ContentViwerComponent implements OnInit {
         (data : any) => {
             this.title = params['page'];
             this.currentRenderData = data;
+            this.loading = false;
+
         }
       )
         
