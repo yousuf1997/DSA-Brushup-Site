@@ -105,4 +105,15 @@ body{
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
+.title-text{
+    background-color: whitesmoke;
+    padding: 1.0em;
+    border-radius: 1em;
+    color: black;
+    font-weight: bold;
+    border-left-width: 1em;
+    font-size: 0.9em;
+    width: fit-content;
+}
